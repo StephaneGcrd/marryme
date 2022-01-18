@@ -15,9 +15,23 @@ export default function Home() {
 			<Box>
 				<Box textStyle="h1">Stéphane Guichard</Box>
 				<Box> Software and Data engineer</Box>
-				<Link href="https://www.linkedin.com/in/steph-guichard/">
-					<Button mt={4}>Linkedin</Button>
-				</Link>
+				<Box>
+					<Link href="https://twitter.com/StephaneGch">
+						<Button
+							borderColor="#00acee"
+							color="#00acee"
+							mt={4}
+							variant="outlined"
+						>
+							Twitter
+						</Button>
+					</Link>
+					<Link href="https://www.linkedin.com/in/steph-guichard/">
+						<Button mt={4} mx={2}>
+							Linkedin
+						</Button>
+					</Link>
+				</Box>
 			</Box>
 		</div>
 	);
