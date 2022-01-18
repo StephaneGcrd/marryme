@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import { Box, Button, useColorMode, Flex, Switch } from "@chakra-ui/react";
 import Link from "next/link";
+import Resume from "components/Resume";
 
 export default function Home() {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -29,11 +30,12 @@ export default function Home() {
 					justifyContent="center"
 					alignItems="center"
 					minH="100vh"
+					px={[8, 4]}
 				>
-					<Box>
-						<Box>
+					<Box maxW={"98vw"}>
+						<Box mt={["50vw", "20vw", "10vw"]}>
 							<Box textStyle="h1">Stéphane Guichard</Box>
-							<Box> Software and Data engineer</Box>
+							<Box> Software and Data Engineer</Box>
 							<Box>
 								<Link href="https://twitter.com/StephaneGch">
 									<Button
@@ -52,6 +54,7 @@ export default function Home() {
 								</Link>
 							</Box>
 						</Box>
+						<Resume />
 					</Box>
 				</Box>
 			</Box>
