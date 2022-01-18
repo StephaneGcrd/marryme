@@ -35,7 +35,7 @@ export default function Home() {
 					<Box maxW={"98vw"}>
 						<Box mt={["50vw", "20vw", "10vw"]}>
 							<Box textStyle="h1">Stéphane Guichard</Box>
-							<Box> Software and Data engineer</Box>
+							<Box> Software and Data Engineer</Box>
 							<Box>
 								<Link href="https://twitter.com/StephaneGch">
 									<Button
