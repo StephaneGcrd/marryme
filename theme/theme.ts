@@ -8,14 +8,20 @@ const colors = {
 	electricYellow: "#ffe180",
 };
 
+const config = {
+	initialColorMode: "light",
+	useSystemColorMode: false,
+};
+
 const textStyles = {
 	h1: {
-		// you can also use responsive styles
 		fontSize: [28, 28, 40],
 		fontWeight: [700],
 		fontFamily: "Raleway",
-		color: "darkGreen",
 		lineHeight: [10],
+		baseStyle: ({ colorMode }) => ({
+			color: colorMode === "dark" ? "darkGreen" : "white",
+		}),
 	},
 	h2: {
 		fontSize: [16],
@@ -93,7 +99,7 @@ const components = {
 				bg: "transparent",
 				color: "darkGreen",
 				fontSize: [14, 16],
-				border: "1px solid #00272b",
+				border: "2px solid #00272b",
 				_hover: {
 					bg: "rgba(0,0,0,0.1)",
 				},
@@ -105,4 +111,10 @@ const components = {
 		},
 	},
 };
-export const theme = extendTheme({ colors, textStyles, styles, components });
+export const theme = extendTheme({
+	config,
+	colors,
+	textStyles,
+	styles,
+	components,
+});
