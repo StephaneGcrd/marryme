@@ -6,7 +6,9 @@ const Resume = () => {
 		<Box mt={10} maxWidth="600px">
 			<Box textStyle="h3">📚 Education</Box>
 			<Box>
-				<Box textStyle="h2">Denmark Tekniske Universitet, Copenhagen 🇩🇰 </Box>
+				<Box textStyle="h2">
+					Danmark Tekniske Universitet (DTU), Copenhagen 🇩🇰{" "}
+				</Box>
 				<Box>Master of science - Computer Science and engineering</Box>
 			</Box>
 			<Box mt={2}>
@@ -20,11 +22,11 @@ const Resume = () => {
 			</Box>
 			<Box mt={2}>
 				<Box textStyle="h2">Roof management </Box>
-				<Box>Student software engineer</Box>
+				<Box>Student Software Engineer</Box>
 			</Box>
 			<Box mt={2}>
 				<Box textStyle="h2">Imagino</Box>
-				<Box>Software engineering intern</Box>
+				<Box>Software Engineering Intern</Box>
 			</Box>
 			<Box textStyle="h3">🤖 Skills</Box>
 			<Box mt={2}>
@@ -97,7 +99,7 @@ const Resume = () => {
 					</Badge>
 				</Stack>
 				<Box mt={5} textAlign="center">
-					✉️ me@stephane.pro
+					Stéphane Guichard © 2022 - me@stephane.pro
 				</Box>
 			</Box>
 		</Box>
