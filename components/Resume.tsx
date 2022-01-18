@@ -3,8 +3,10 @@ import { Box, Badge, Stack } from "@chakra-ui/react";
 
 const Resume = () => {
 	return (
-		<Box mt={10} maxWidth="600px">
-			<Box textStyle="h3">📚 Education</Box>
+		<Box mt={"200px"} maxWidth="600px">
+			<Box textStyle="h3" mt={2}>
+				📚 Education
+			</Box>
 			<Box>
 				<Box textStyle="h2">
 					Danmark Tekniske Universitet (DTU), Copenhagen 🇩🇰{" "}
@@ -15,7 +17,9 @@ const Resume = () => {
 				<Box textStyle="h2">EPF, Paris 🇫🇷</Box>
 				<Box>Master of Engineering</Box>
 			</Box>
-			<Box textStyle="h3">👨🏻‍💻 Professional experiences</Box>
+			<Box textStyle="h3" mt={4}>
+				👨🏻‍💻 Professional experiences
+			</Box>
 			<Box>
 				<Box textStyle="h2">Enershare </Box>
 				<Box>Founder - CTO</Box>
@@ -28,7 +32,9 @@ const Resume = () => {
 				<Box textStyle="h2">Imagino</Box>
 				<Box>Software Engineering Intern</Box>
 			</Box>
-			<Box textStyle="h3">🤖 Skills</Box>
+			<Box textStyle="h3" mt={4}>
+				🤖 Skills
+			</Box>
 			<Box mt={2}>
 				<Box textStyle="h2">Languages & Frameworks</Box>
 				<Stack direction="row" wrap="wrap" gap={2}>

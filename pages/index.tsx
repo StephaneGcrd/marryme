@@ -33,7 +33,7 @@ export default function Home() {
 					px={[8, 4]}
 				>
 					<Box maxW={"98vw"}>
-						<Box mt={["50vw", "20vw", "10vw"]}>
+						<Box mt={["50%"]}>
 							<Box textStyle="h1">Stéphane Guichard</Box>
 							<Box> Software and Data Engineer</Box>
 							<Box>
