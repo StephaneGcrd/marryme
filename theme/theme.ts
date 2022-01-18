@@ -27,21 +27,27 @@ const textStyles = {
 		fontSize: [16],
 		fontWeight: [700],
 		fontFamily: "Raleway",
-		color: "darkGreen",
+		baseStyle: ({ colorMode }) => ({
+			color: colorMode === "dark" ? "darkGreen" : "white",
+		}),
 	},
 	h3: {
 		fontSize: [20, 24],
 		fontWeight: [800],
 		fontFamily: "Raleway",
-		color: "darkGreen",
 		lineHeight: [10],
+		baseStyle: ({ colorMode }) => ({
+			color: colorMode === "dark" ? "darkGreen" : "white",
+		}),
 	},
 	h4: {
 		fontSize: [18, 20, 20],
 		fontWeight: [800],
 		fontFamily: "Raleway",
-		color: "darkGreen",
 		lineHeight: [6],
+		baseStyle: ({ colorMode }) => ({
+			color: colorMode === "dark" ? "darkGreen" : "white",
+		}),
 	},
 	p: {
 		fontSize: [18, 20],
