@@ -14,8 +14,18 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Box bg={colorMode === "light" ? "white" : "black"} minH="100vh">
-				<Flex justify="center" align="center" position="fixed" mt={2} right={5}>
+			<Box
+				bg={colorMode === "light" ? "white" : "black"}
+				transition="background-color 0.3s"
+				minH="100vh"
+			>
+				<Flex
+					justify="center"
+					align="center"
+					position="absolute"
+					mt={2}
+					right={5}
+				>
 					<Box color="centralGrey" mr={4}>
 						{colorMode === "light" ? "☀" : "🌒"}
 					</Box>
@@ -33,14 +43,20 @@ export default function Home() {
 					px={[8, 4]}
 				>
 					<Box maxW={"98vw"}>
-						<Box mt={["50%"]}>
-							<Box textStyle="h1">Stéphane Guichard</Box>
+						<Box>
+							<Box
+								textStyle="h1"
+								bgGradient="linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 50%, rgba(252,175,70,1) 100%);"
+								bgClip="text"
+							>
+								Stéphane Guichard
+							</Box>
 							<Box> Software and Data Engineer</Box>
 							<Box>
 								<Link href="https://twitter.com/StephaneGch">
 									<Button
-										borderColor="#00acee"
-										color="#00acee"
+										borderColor="rgba(252,70,107,1)"
+										color="rgba(252,70,107,1)"
 										mt={4}
 										variant="outlined"
 									>
@@ -54,7 +70,10 @@ export default function Home() {
 								</Link>
 							</Box>
 						</Box>
-						<Resume />
+						{/* <Resume /> */}
+						<Box position="absolute" bottom={2} left={2} textStyle="small">
+							Stéphane Guichard © 2022 - me@stephane.pro
+						</Box>
 					</Box>
 				</Box>
 			</Box>

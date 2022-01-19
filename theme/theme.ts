@@ -15,10 +15,10 @@ const config = {
 
 const textStyles = {
 	h1: {
-		fontSize: [28, 28, 40],
+		fontSize: [28, 28, 60],
 		fontWeight: [700],
 		fontFamily: "Raleway",
-		lineHeight: [10],
+		lineHeight: [10, 10, "70px"],
 		baseStyle: ({ colorMode }) => ({
 			color: colorMode === "dark" ? "darkGreen" : "white",
 		}),
@@ -77,7 +77,7 @@ const styles = {
 const components = {
 	Button: {
 		baseStyle: {
-			bg: "darkGreen",
+			bg: "#3f5efb",
 			color: "white",
 			fontFamily: "Raleway",
 			fontSize: [14, 16],

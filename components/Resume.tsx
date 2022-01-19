@@ -104,9 +104,6 @@ const Resume = () => {
 						XGBOOST
 					</Badge>
 				</Stack>
-				<Box mt={5} textAlign="center">
-					Stéphane Guichard © 2022 - me@stephane.pro
-				</Box>
 			</Box>
 		</Box>
 	);
