@@ -17,7 +17,7 @@ const textStyles = {
 	h1: {
 		fontSize: [28, 28, 60],
 		fontWeight: [700],
-		fontFamily: "Raleway",
+		fontFamily: "Open sans",
 		lineHeight: [10, 10, "70px"],
 		baseStyle: ({ colorMode }) => ({
 			color: colorMode === "dark" ? "darkGreen" : "white",
@@ -26,7 +26,7 @@ const textStyles = {
 	h2: {
 		fontSize: [16],
 		fontWeight: [700],
-		fontFamily: "Raleway",
+		fontFamily: "Open Sans",
 		baseStyle: ({ colorMode }) => ({
 			color: colorMode === "dark" ? "darkGreen" : "white",
 		}),
